@@ -1,0 +1,208 @@
+footer {
+    z-index: 1;
+
+    margin-top: -132px;
+    padding-top: 50%;
+
+    background: $seventh-color;
+    h1 {
+        color: $sixth-color;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+
+        text-align: center;
+
+        color: $eigth-color;
+    }
+    img {
+        width: auto;
+    }
+    button {
+        font-size: 16px;
+        line-height: 60px;
+
+        display: block;
+
+        width: 167px;
+        margin: 40px auto 80px auto;
+
+        text-align: center;
+
+        color: $sixth-color;
+        background: $fifth-color;
+
+        @include rounded-corners();
+    }
+    .companies {
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        ul {
+            margin: 36px 0;
+            padding: 0;
+
+            text-align: center;
+            li {
+                height: 50px;
+                margin-bottom: 20px;
+
+                list-style: none;
+
+                text-align: center;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .footer-nav {
+        padding: 60px 0 160px 0;
+
+        background: #545e6b;
+        .footer__brand-block {
+            img {
+                display: block;
+
+                margin: 0 auto;
+            }
+            p {
+                width: 100%;
+                padding: 20px 0;
+
+                text-align: center;
+
+                @include body-white-left();
+            }
+        }
+        .footer__nav-block {
+            ul {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+                text-align: center;
+                li {
+                    line-height: 40px;
+
+                    display: inline-block;
+                    &:first-child {
+                        display: block;
+                    }
+                    h3 {
+                        font-weight: 500;
+
+                        margin: 0;
+
+                        color: $sixth-color;
+                    }
+                    a {
+                        @include body-white-left();
+                        &:after {
+                            font-size: 40px;
+
+                            margin-left: 5px;
+
+                            content: ".";
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer__idioma-block {
+            padding: 5% 12% 0 0;
+            .icon {
+                float: right;
+
+                width: 15px;
+                height: 15px;
+                margin-top: 5px;
+            }
+            .dropdown,
+            .dropdown.open {
+                float: right;
+
+                margin-left: 10px;
+                button {
+                    @include reset-button-style();
+                    @include body-white-left();
+                }
+                a {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    footer {
+        padding-top: 20%;
+        p {
+            font-size: 22px;
+        }
+        .companies {
+            ul {
+                li {
+                    display: inline-block;
+
+                    margin-right: 5%;
+
+                    text-align: left;
+                }
+            }
+        }
+        .footer-nav {
+            padding: 60px 0;
+            .footer__brand-block {
+                img {
+                    float: left;
+
+                    margin-left: 0;
+                }
+                p {
+                    float: left;
+
+                    width: 72%;
+                    margin-left: 2%;
+                    padding: 0;
+
+                    text-align: left;
+                }
+            }
+            .footer__nav-block {
+                ul {
+                    float: left;
+
+                    width: 30%;
+                    margin-left: 3%;
+
+                    text-align: left;
+                    li {
+                        display: block;
+                        h3 {
+                            padding-bottom: 20px;
+                        }
+                        a:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .footer__idioma-block {
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/* Headings */
+@mixin heading-level-1() {
+	color: $first-color;
+	font-size: 22px;
+	text-transform: Capitalize;
+	font-weight: 300;
+	text-align: center;
+}
+@mixin heading-level-1-inverse() {
+	@include heading-level-1();
+	color: $sixth-color;
+}
+
+@mixin heading-level-2() {
+	color: $first-color;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+@mixin heading-level-3() {
+	color: $first-color;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+@mixin heading-level-4() {
+	color: $third-color;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Sub Headings */
+@mixin body-gray-left() {
+	font-weight: 300;
+	font-size: 14px;
+	color: $seventh-color;
+}
+@mixin body-white-left() {
+	font-weight: 400;
+	font-size: 16px;
+	color: $eigth-color;
+	text-align: left;
+	line-height: 25px;
+}
+@mixin sub-heading-type-1() {
+	@include body-gray-left();
+	text-align: center;
+	margin-bottom: 10px;
+}
+@mixin sub-heading-type-2() {
+	@include sub-heading-type-1();
+	font-size: 16px;
+	color: $second-color;
+}
+
+@mixin sub-heading-type-1-big-screens() {
+	width: 56%;
+	margin: 0 auto 40px auto;
+	font-size: 22px;
+}
+
+/* rounded corners */
+@mixin rounded-corners() {
+	border-radius: 5px;
+}
+@mixin rounded-right-corners() {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* block separated by border bottom */
+@mixin block-border-bottom () {
+	border-bottom: 1px solid #E1E8EE;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+/* reset button */
+@mixin reset-button-style() {
+	background: none;
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+	padding:0;
+	box-shadow: none;
+}

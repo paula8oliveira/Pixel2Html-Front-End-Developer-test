@@ -1,0 +1,23 @@
+.navbar {
+    position: fixed;
+
+    width: 100%;
+
+    border: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+       -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navbar-brand {
+    .navbar-brand__image {
+        display: block;
+
+        width: 122px;
+        height: 22px;
+        margin: 0 auto;
+
+        background: url(../images/logo.png);
+        background-size: 100%;
+    }
+}

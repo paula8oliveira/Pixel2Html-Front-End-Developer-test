@@ -1,0 +1,42 @@
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif; 
+}
+figure {
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+
+h1 {
+	@include heading-level-1();
+}
+h2 {
+	@include heading-level-2();
+}
+h3 {
+	@include heading-level-3();
+}
+h4 {
+	@include heading-level-4();
+}
+button {
+	border: 0;
+	background: none;
+	margin: 0;
+	padding:0;
+	color: $third-color;
+}
+.main {
+	padding-top: 20%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.main {
+		padding-top: 10%;
+	}
+	h1 {
+		font-size: 52px;
+	}
+}
